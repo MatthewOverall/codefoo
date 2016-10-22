@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import {
-  dataStore
-} from './dataStore/dataStore'
+import { dataStore} from './dataStore/dataStore' // my const dataStore.
 
 Vue.use(Vuex)
 const store = new Vuex.Store({

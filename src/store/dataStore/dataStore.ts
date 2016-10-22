@@ -1,7 +1,7 @@
 import * as firebase from 'firebase'
 import * as FB from './firebaseStore'
 import { FirebaseAdapter } from 'js-data-firebase'
-import { FirebaseAuthStore } from '../../auth/firebase-auth'
+// import { FirebaseAuthStore } from '../../auth/firebase-auth'
 
 let config = {
   apiKey: 'AIzaSyBWqcFZa4n0RMP6_HoYf1_U7r8mWQB7UnM',
@@ -11,7 +11,7 @@ let config = {
 }
 
 const firebaseApp = firebase.initializeApp(config)
-const authStore = new FirebaseAuthStore(firebaseApp)
+// const authStore = new FirebaseAuthStore(firebaseApp)
 
 // authStore.onAuthStateChanged((user) => store.commit('SET_USER') workbench.authStateChanged(user))
 
@@ -93,6 +93,4 @@ dataStore.defineMapper('file', {
 
 export {
   dataStore,
-  // projectManager,
-  // authStore
 }
